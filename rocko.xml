@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
-  <default remote="yocto" revision="rocko" fetch="git://git.yoctoproject.org"/>
+  <remote name="yocto" fetch="git://git.yoctoproject.org"/>
+  <default remote="yocto" revision="rocko" sync-j="4"/>
 
-  <project name=poky      path="layers/poky">
-  <project name=meta-ti   path="layers/meta-ti">
+  <project name="poky"      path="layers/poky"/>
+  <project name="meta-ti"   path="layers/meta-ti"/>
+
 </manifest>
-
